@@ -52,7 +52,7 @@ def head_update(current_head, new_word):
     return ' '.join(temp_head[1:])
 
 tk = WhitespaceTokenizer()
-with open(input("please pass text corpus file"), 'r', encoding='utf-8') as corpus:
+with open(input("please pass text corpus file\n"), 'r', encoding='utf-8') as corpus:
     tokens = tk.tokenize(corpus.read())
     list_of_trigrams = list(trigrams(tokens))
 
